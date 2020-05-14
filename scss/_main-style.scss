@@ -1,0 +1,21 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

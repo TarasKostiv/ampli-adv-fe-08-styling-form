@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form_wrapper">
+        <form action="">
+          <fieldset>
+            <legend>Registration</legend>
+            <div class="input_wrapper">
+              <div class="input_block">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Enter username"
+                  required
+                />
+                <label for="username">Username</label>
+              </div>
+
+              <div class="input_block">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email"
+                  required
+                />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input_block">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter password"
+                  required
+                />
+                <label for="password">Password</label>
+              </div>
+
+              <div class="input_block">
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  placeholder="Confirm your password"
+                  required
+                />
+                <label for="confirm_password">Confirm password</label>
+              </div>
+            </div>
+
+            <div class="gender_wrapper">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+              />
+              <label for="male">Male</label>
+
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+
+            <div class="textarea_block">
+              <textarea
+                name="biography"
+                id="textarea_biography"
+                value=""
+                required
+              >
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl</textarea
+              >
+              <label for="textarea_biography">Your biography</label>
+            </div>
+
+            <div class="terms_news_block">
+              <input type="checkbox" name="terms" id="terms" required />
+              <label for="terms">I agree with Terms and Conditions</label>
+              <input type="checkbox" name="news" id="news" required />
+              <label for="news">Subscribe to our newsletter</label>
+            </div>
+
+            <div class="button_block">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
