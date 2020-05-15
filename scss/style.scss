@@ -285,3 +285,17 @@ fieldset {
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  body {
+    font-size: 14px;
+  }
+
+  .form_wrapper {
+    width: 100%;
+  }
+
+  fieldset {
+    padding-left: 0;
+  }
+}
