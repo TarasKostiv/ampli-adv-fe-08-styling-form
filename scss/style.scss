@@ -1,6 +1,8 @@
 @import "main-style";
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
+$input-background: #f3f3f3;
+
 html {
   padding: 0;
   margin: 0;
@@ -52,11 +54,8 @@ fieldset {
 }
 
 .input_block {
-  // background: rgba(51, 51, 51, 0.06);
-  // padding: 10px;
   margin-bottom: 20px;
   position: relative;
-  // border-bottom: 1px solid #979797;
   label {
     position: absolute;
     left: 10px;
@@ -70,7 +69,7 @@ fieldset {
     width: 100%;
     font-size: inherit;
     outline: none;
-    background: rgba(51, 51, 51, 0.06);
+    background: $input-background;
     border-bottom: 2px solid #979797;
     height: 36px;
     padding-top: 20px;
@@ -120,7 +119,7 @@ fieldset {
 
     &:after {
       content: "";
-      transition: all 0.2s;
+      transition: background 0.2s;
     }
 
     &:nth-of-type(2) {
@@ -203,13 +202,16 @@ fieldset {
 .textarea_block {
   position: relative;
   label {
+    @extend .align-center;
     font-size: 0.9rem;
-    // background: ;
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 10px;
     color: #0000008a;
     transition: color 0.2s;
+    background: $input-background;
+    width: 99%;
+    height: 35px;
   }
 
   textarea {
@@ -220,7 +222,7 @@ fieldset {
     height: 46px;
     outline: none;
     border: none;
-    background: #3333330f;
+    background: $input-background;
     padding: 10px;
     padding-top: 45px;
     border-bottom: 2px solid #979797;

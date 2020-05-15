@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.align-center, .gender_wrapper, .terms_news_block label {
+.align-center, .gender_wrapper, .terms_news_block label, .textarea_block label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,7 @@ fieldset .input_wrapper {
   width: 100%;
   font-size: inherit;
   outline: none;
-  background: rgba(51, 51, 51, 0.06);
+  background: #f3f3f3;
   border-bottom: 2px solid #979797;
   height: 36px;
   padding-top: 20px;
@@ -150,8 +150,8 @@ fieldset .input_wrapper {
 
 .gender_wrapper label:after {
   content: "";
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
 }
 
 .gender_wrapper label:nth-of-type(2) {
@@ -228,11 +228,14 @@ fieldset .input_wrapper {
 .textarea_block label {
   font-size: 0.9rem;
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 10px;
   color: #0000008a;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  background: #f3f3f3;
+  width: 99%;
+  height: 35px;
 }
 
 .textarea_block textarea {
@@ -243,7 +246,7 @@ fieldset .input_wrapper {
   height: 46px;
   outline: none;
   border: none;
-  background: #3333330f;
+  background: #f3f3f3;
   padding: 10px;
   padding-top: 45px;
   border-bottom: 2px solid #979797;
