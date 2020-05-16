@@ -9,9 +9,17 @@
   <body>
     <div class="wrapper">
       <div class="form_wrapper">
-        <form action="">
+        <form
+          method="POST"
+          action="https://ampli-html-forms.herokuapp.com/data"
+        >
           <fieldset>
             <legend>Registration</legend>
+            <input
+              type="hidden"
+              value="Powered by Taras Kostiv"
+              name="author"
+            />
             <div class="input_wrapper">
               <div class="input_block">
                 <input
